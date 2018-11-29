@@ -1,6 +1,9 @@
-/*body {background-image: url("images/TinaTest.PNG");
+body {background-image: url("images/Hintergrund.jpg");
       background-size: cover;
-      background-position: 50% 30%;}*/
+      background-repeat: no-repeat;
+      background-position: 50% 30%;}
 a {color: black;}
 a:hover {color: lightgray;}
 .container-fluid {background-color: white;}
+#introduction {position:relative; 
+               left: 40%;}
