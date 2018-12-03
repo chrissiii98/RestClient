@@ -6,30 +6,44 @@ header.masthead{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position: 50% 30%;
+    margin-top: -20px;
 }
 
 #intro-text{
 	text-align: center;
+    font-size: 13pt;
 	position: relative;
 	top: 230px;	
 }
 
 #demo{
-		height: 700px;
-	
-	
+		height: 700px;	
 }
+
 	
 h2{
 		font-size: 50px;
 }
+
 a {
     color: black;
+} 
+
+#demoButton {
+    margin-top: 5%;
+    background-color: transparent;
+    border-color: black;
 }
-a:hover {
-    color: lightgray;
+
+#demoButton:hover {
+    background-color: white;
 }
+
 .container-fluid {
     background-color: white;
+}
+
+.navbar-brand:hover, .navbar-brand:visited {
+    color: black;
+    cursor: default;
 }
