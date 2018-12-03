@@ -17,6 +17,7 @@ a {
     margin-left: 2%;
     margin-top: 2%;
     background-color: #EFF7FA;
+    float: left;
 }
 
 #sidenavtitle {
@@ -27,9 +28,35 @@ a {
 }
 
 #headline {
-    text-align: center;
+    margin-left: 52%;
 }
 
 #mainDiv {
     border: 1px solid black;
+    width: 80%;
+    height: 700px;
+    float: right;
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-bottom: 3%;
+}
+
+#weather {
+    border: 1px solid black;
+    width: 100%;
+    height: 150px;
+}
+
+#weatherItems, #defaultItems {
+    border: 1px solid black;
+    width: 50%;
+    height: 550px; 
+}
+
+#defaultItems {
+    float: right;
+}
+
+#weatherItems {
+    float: left;
 }
