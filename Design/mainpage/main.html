@@ -46,14 +46,57 @@
     <!---- MAIN VIEW ---->
     <div id="mainDiv">
         <div id="weather">  
-            <div class="glyphicon glyphicon-menu-down" id = "arrowDown"></div>
+            <p id="place">Paris, France</p>
             
+            <img src="../images/weatherExample.jpg" alt="weather" id="weatherIcon" height="110" width="110">
+            <div  id="temperature"> 
+                   <h4>Weather Data</h4>
+                avgHighTemp: <p id= "highTemp">12</p> °C
+                <br> 
+                avgLowTemp: <p id= "lowTemp">2</p> °C
+            </div>
+            <div id= "vacationData"> 
+                <h4>Vaction Data</h4>
+                arrival: <p id= "arrival">05.02.2018</p> 
+                <br> 
+                departure: <p id= "departure">10.02.2018</p> 
+            </div>
             
-            
+        <div class="glyphicon glyphicon-menu-down" id = "arrowDown"></div>
         </div>
-        <div id = "hiddenElement"> 
-            <div class="glyphicon glyphicon-menu-up" id = "arrowUp"></div>
+        <div id = "hiddenElement">
+            <h4 > additional information </h4>     
+            <div id="additionalWeather">
+                <div>
+                    <img src="../images/cloudcover.jpg" alt="weather" id="cloudCoverImage" height="40" width="40">
+                    <div id="cloudElements">
+                         cloud cover: 
+                        <p id = "cloudCover">45</p>
+                         %
+                    </div>
+                </div>
 
+                <div>
+                    <img src="../images/windSpeed.jpg" alt="weather" id="windSpeedImage" height="40" width="40">
+                    <div id="windSpeedElements">
+                         wind speed: 
+                        <p id = "windSpeed">2</p>
+                         km/h
+                    </div>
+                </div>
+
+                <div>
+                    <img src="../images/raini.jpg" alt="weather" id="precipImage" height="50" width="50">
+                    <div id="precipElements">
+                         precipitation chance: 
+                        <p id = "precipitation">60</p>
+                         %
+                    </div>
+                </div>
+                <p id="precipTypes">The precipitation types in this time of period are rain and drizzle.</p>
+            </div>
+            <div class="glyphicon glyphicon-menu-up" id = "arrowUp"></div>
+            
         </div>
 
         <div id="weatherItems">
