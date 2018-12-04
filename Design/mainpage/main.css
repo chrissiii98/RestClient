@@ -9,6 +9,14 @@ a {
 .navbar-brand:hover {
     color: darkslategrey;
 }
+.navbar-toggler{
+ 
+    width: 20%;
+    padding-right: 20%;
+    position: relative;
+    left: 600px;
+    
+}
 
 .sidenav {
     background-color: white;
@@ -41,11 +49,17 @@ a {
     margin-bottom: 3%;
 }
 
-#weather {
-    border: 1px solid black;
+#weather, #hiddenElement{
     width: 100%;
     height: 150px;
 }
+#hiddenElement{
+    display: none;   
+}
+
+#arrowDown, #arrowUp{    
+    margin-left: 50%;
+} 
 
 #weatherItems, #defaultItems {
     border: 1px solid black;
