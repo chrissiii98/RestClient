@@ -19,7 +19,6 @@ a {
 }
 
 .sidenav {
-    background-color: white;
     width: 13%;
     height: 200px;
     margin-left: 2%;
@@ -36,7 +35,11 @@ a {
 }
 
 #headline {
-    margin-left: 52%;
+    margin-left: 50%;
+}
+
+p {
+    font-weight: bold;
 }
 
 #highTemp, #lowTemp, #arrival, #departure, #cloudCover, #windSpeed, #precipitation{
