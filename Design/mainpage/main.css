@@ -18,6 +18,12 @@ a {
     
 }
 
+#editVacation {
+    clear: both;
+    float:right;
+    margin-bottom: 30%;
+}
+
 .sidenav {
     width: 13%;
     height: 200px;
@@ -102,6 +108,7 @@ h4{
    margin-left: 10%;
     width: 90%;
     height: 170px;
+    background-color: red;
 }
 
 #hiddenElement{
