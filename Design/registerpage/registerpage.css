@@ -40,6 +40,12 @@ label {
     margin-top: 0.5%;
 }
 
+select:required:invalid {
+  color: gray;
+}
+option[value=""][disabled] {
+  display: none;
+}
 option {
-    color: black;
+  color: black;
 }
