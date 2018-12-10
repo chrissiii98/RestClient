@@ -14,7 +14,7 @@
     <!------ NAVBAR--->
     <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">VacationPlanner</a>
+          <a class="navbar-brand" href="../mainpage/main.html">VacationPlanner</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
@@ -36,26 +36,73 @@
       
         <form  >
             <div class="form-group">
-              <label class="control-label col-sm-2" for="username">username</label>
+              <label class="control-label col-sm-2" for="username">Username:</label>
               <div class="col-sm-10">
-                <input class="form-control" id="username"  placeholder =" " name="username">
+                <input class="form-control" type="text" id="username" name="username">
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-sm-2" for="pwd">Password:</label>
+              <label class="control-label col-sm-2" for="gender">Gender:</label>
               <div class="col-sm-10">          
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                <select class="form-control" id="gender" name="gender">
+                    <option>male</option>
+                    <option>female</option>
+                  </select>
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-sm-2" for="email">Email:</label>
+              <label class="control-label col-sm-2" for="clothsize">Clothingsize:</label>
               <div class="col-sm-10">
-                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                <select class="form-control" id="clothsize" name="clothsize">
+                    <option>XS</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                  </select>
               </div>
             </div>
-            <div class="form-group">        
-              <div class="col-sm-offset-2 col-sm-10">
-                  <button id="test"> test </button>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="shoesize">Shoesize:</label>
+              <div class="col-sm-10">
+                <select class="form-control" id="shoesize" name="shoesize">
+                    <option>35</option>
+                    <option>36</option>
+                    <option>37</option>
+                    <option>38</option>
+                    <option>39</option>
+                    <option>40</option>
+                    <option>41</option>
+                    <option>42</option>
+                    <option>43</option>
+                    <option>44</option>
+                    <option>45</option>
+                    <option>46</option>
+                    <option>47</option>
+                    <option>48</option>
+                  </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="favocolor">Favorite color:</label>
+              <div class="col-sm-10">
+                <select class="form-control" id="favocolor" name="favocolor">
+                    <option>blue</option>
+                    <option>green</option>
+                    <option>yellow</option>
+                    <option>orange</option>
+                    <option>red</option>
+                    <option>purple</option>
+                    <option>pink</option>
+                    <option>grey</option>
+                    <option>black</option>
+                    <option>white</option>
+                    <option>brown</option>
+                  </select>
+              </div>
+            </div>
+            <div class="form-group">
                 <button type="submit" class="btn btn-default" id ="submit">Submit</button>
               </div>
             </div>
