@@ -6,6 +6,7 @@ a {
     color: black;
 }
 
+
 .navbar-brand:hover {
     color: darkslategrey;
 }
@@ -136,8 +137,6 @@ h4{
     width: 92%;
 }
 
-
-
 #hiddenElement{
     margin-top: 3%;
     display: none;   
@@ -164,8 +163,7 @@ h4{
     margin-top: 0%;
 }
 
-#weatherItems, #defaultItems {
-    
+#weatherItems, #defaultItems {   
     margin-top: 5%;
     width: 50%;
     text-align: center;
