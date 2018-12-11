@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vacation Planner - startpage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="870925711611-nmi0bmqckemvf20p0kdpkgnl4m7oq0i0.apps.googleusercontent.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<body>
+<! ------ NAVBAR--->
+    <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand">VacationPlanner</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li> <div class="g-signin2" data-onsuccess="onSignIn"></div></li>
+        </ul>
+    </div>	
+    
+<! --- Header --->
+    <header class ="masthead">
+        <div id ="intro-text">
+            <h1 class="line">Vacation Planner</h1>
+            <p>This website helps you to plan your luggage for your next vacation.</p>
+            <button id="demoButton" type="button" class="btn btn-lg" onClick="document.getElementById('demo').scrollIntoView();">
+                Try it!
+            </button>
+        </div>
+    </header>
+    
+<! --- Demo --->
+    <div id="demo" class="container-fluid">
+        <div class="row top-buffer text-center">
+            <h1 class="line">Demo</h1>
+        </div>
+        <div class="row top-buffer text-center" id="frameElement">
+            <div id="demoElement">
+            </div>
+        </div>
+    </div>
+    
+<! --- LogIn -->   
+<script>
+    function onSignIn(googleUser) {
+	    // Useful data for your client-side scripts:
+	    var profile = googleUser.getBasicProfile();
+	    console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+	    console.log('Full Name: ' + profile.getName());
+	    console.log('Given Name: ' + profile.getGivenName());
+	    console.log('Family Name: ' + profile.getFamilyName());
+	    console.log("Image URL: " + profile.getImageUrl());
+	    console.log("Email: " + profile.getEmail());
+	
+	    // The ID token you need to pass to your backend:
+	    var id_token = googleUser.getAuthResponse().id_token;
+	    console.log("ID Token: " + id_token);
+              
+        const Http = new XMLHttpRequest();
+        const url='http://localhost:8080/api/authenticate';
+        Http.open("POST", url);
+        Http.setRequestHeader("Authorization","Bearer"+id_token); 
+        Http.send();
+       
+        Http.onreadystatechange=(e)=>{
+            if (Http.readyState == 4 && Http.status == 201)
+            {
+                location.replace("register.html");  
+            } else if (Http.readyState == 4 && Http.status == 200)
+            {
+        	    location.replace("main.html"); 
+            }
+        }   
+    };
+</script>        
+</body>

@@ -1,0 +1,23 @@
+a {
+    color: black;
+} 
+
+.navbar-brand:visited {
+    color: black;
+}
+
+.navbar-brand:hover {
+    color: darkslategrey;
+}
+
+.form-group, .form-control, label {
+    margin-top: 1%;
+}
+
+.top-buffer {
+    margin-top: 3%;
+}
+
+option {
+    color: black;
+}
