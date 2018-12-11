@@ -30,23 +30,211 @@
     </div>  
     
     <!---- HEADLINE ------>
-    <h1 id="headline">France 2018</h1>
-    
+    <div class ="container-fluid">
+        <div class ="row">
+            <div class = "col-sm-12" >
+                <h1 id="headline">France 2018</h1>
+            </div>
+        </div>
+        
     <!---- SIDENAV --->
-    <div class="sidenav">
-        <h3 id="sidenavtitle">Vacations</h3>
-        <button id="addVacation" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modVacation"><span class="glyphicon glyphicon-plus"></span> add </button>
-    <!-- Modal -->
+    <div class ="row">
+        <div class="col-sm-2 ">
+        <h3>Vacations</h3>
+            <div class ="row">
+                <div class="col-sm-10">
+                    <ul>
+                        <li><a href="#">France 2018</a></li>
+                        <li><a href="#">Italy 2018</a></li>
+                        <li><a href="#">Turkey 2018</a></li>
+                        <li><a href="#">Spain 2018</a></li>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </ul>
+                </div> 
+                <div class="col-sm-2 col-sm-pull-2" >
+                    <button id="addVacation" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modVacation"><span class="glyphicon glyphicon-plus"></span> add </button>
+                </div>
+            </div>
+        </div>
+         
+    <!---- MAIN VIEW ---->
+    <div class="col-sm-10">     
+       <div class="row">
+           <div class ="col-sm-10">
+               <div class ="row">
+                   <div class ="col-sm-12 col-sm-push-2">
+                        <p id="place">Paris, France</p>
+                    </div>
+                </div>
+                <div class ="row">
+                    <div class ="col-sm-5 col-sm-push-2">
+                        <img src="https://image.flaticon.com/icons/svg/12/12163.svg" alt="weather" id="weatherIcon" height="110" width="110">
+                        <div id="temperature"> 
+                            <h4>Weather Data</h4>
+                            avgHighTemp: <p id= "highTemp">12</p> °C
+                            <br> 
+                            avgLowTemp: <p id= "lowTemp">2</p> °C
+                        </div>
+                    </div>
+                    <div class ="col-sm-5">
+                        <div id= "vacationData"> 
+                            <h4>Vaction Data</h4>
+                            arrival: <p id= "arrival">05.02.2018</p> 
+                            <br> 
+                            departure: <p id= "departure">10.02.2018</p> 
+                        </div>
+                    </div>
+                    <div class ="col-sm-2 col-sm-pull-2">
+                    <div id="vacationButtons">
+                        <button id="editVacation" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span> edit</button>
+                        <button id="deleteVacation" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span> delete</button>
+                    </div>
+                    </div>
+               </div>
+                <div class ="row"> 
+                    <div class ="col-sm-10 col-sm-push-2">
+                        <div class="glyphicon glyphicon-menu-down" id = "arrowDown"></div>
+                    </div>
+                </div>  
+           
+<!---------------------------------------- Hidden Element ----------------------------------->             
+        <div class="row">
+           <div class ="col-sm-10 col-sm-push-1"> 
+                <div id = "hiddenElement">
+                    <h4> additional information </h4>     
+                        <div id="additionalWeather">
+                            <div>
+                                <img src="../images/cloudcover.jpg" alt="weather" id="cloudCoverImage" height="40" width="40">
+                                <div id="cloudElements">
+                                    cloud cover: 
+                                    <p id = "cloudCover">45</p>
+                                    %
+                                </div>
+                            </div>
+                            <div>
+                                <img src="../images/windSpeed.jpg" alt="weather" id="windSpeedImage" height="40" width="40">
+                                <div id="windSpeedElements">
+                                    wind speed: 
+                                    <p id = "windSpeed">2</p>
+                                    km/h
+                                </div>
+                            </div>
+                            <div>
+                                <img src="../images/raini.jpg" alt="weather" id="precipImage" height="50" width="50">
+                                <div id="precipElements">
+                                    precipitation chance: 
+                                    <p id = "precipitation">60</p>
+                                    %
+                                </div>
+                            </div>
+                        <p id="precipTypes">The precipitation types in this time of period are rain and drizzle.</p>
+                    </div>
+                    <div class ="row"> 
+                    <div class ="col-sm-10 col-sm-push-2">
+                        <div  class="glyphicon glyphicon-menu-up" id = "arrowUp"></div>
+                    </div>
+                </div>   
+                </div>
+            </div>
+           </div>
+           </div>
+        </div>
+       
+        <div class="row">
+           <div class ="col-sm-6"> 
+                <h3 style="text-align: center;"> weather-dependent items </h3>
+                    <table class="table table-bordered" >
+                        <thead>
+                            <tr>
+                                <th> </th>
+                                <th>name</th>
+                                <th>planned</th>
+                                <th>packed</th>
+                                <th>ebay</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td> <div class="checkbox"> <label><input type="checkbox" value=""></label></div></td>
+                            <td>shirt</td>
+                            <td> <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-plus"> </span> </button > 
+                                    2 
+                                <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-minus"> </span> </button>
+                            </td>
+                            <td>
+                                <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-plus"> </span> </button>
+                                    2 
+                                <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-minus"> </span> </button>
+                            </td>                    
+                            <td> <span class = "glyphicon glyphicon-menu-left"> </span> 
+                                <img src="https://images.evo.com/imgp/zoom/97973/466743/sub_urban-riot-good-vibes-loose-t-shirt-women-s-white-front.jpg" alt="ebay.com" width="80" height="80"> 
+                                <span class = "glyphicon glyphicon-menu-right"> </span>  
+                            </td> 
+                        </tr>
+                      </tbody>
+                     </table>
+            </div>
+            <div class ="col-sm-6"> 
+                    <h3 id="universalItem"> universal items </h3>
+                    <button class="btn btn-default" id="addItem"> add Item </button>
+                    <table class="table table-bordered" >
+                        <thead>
+                          <tr>
+                            <th> </th>
+                            <th>named</th>
+                            <th>planned</th>
+                            <th>packed</th>
+                            <th>buy</th>
+                            <th> </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center"> <div class="checkbox"> <label><input type="checkbox" value=""></label></div></td>
+                            <td>Pencil</td>
+                            <td class="text-center" >
+                                <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-plus"> </span> </button> 
+                                    2 
+                                <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-minus"> </span></button>
+                            </td>
+                            <td> 
+                                <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-plus"> </span> </button> 
+                                    2 
+                                <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-minus"> </span> </button>
+                            </td>
+                            <td>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/1200px-EBay_logo.svg.png" alt="ebay.com" width="80" height="30">
+                            </td> 
+                            <td><span class="glyphicon glyphicon-trash"> </span></td>
+                          </tr>
+                        </tbody>
+                    </table> 
+                </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    
+    <!-- Modal Element -->
       <div class="modal fade" id="modVacation" role="dialog">
         <div class="modal-dialog modal-lg">
-
           <!-- Modal content-->
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
               <h4 class="modal-title">New Vacation</h4>
             </div>
-              
               <div class="modal-body">
                 <form data-toggle="validator">
                     <div class="form-group">
@@ -67,160 +255,16 @@
                         <input class="form-control" type="text" id="city" name="city" placeholder="Enter city" maxLength="20" pattern="^[_A-z0-9]{1,}$" required>
                       </div>
                     </div>
-
                     <div class="form-group">
-                    
                         <button type="submit" class="btn btn-default" id ="submit">Submit</button>
-                        
                     </div>
                 </form>
             </div>
           </div>
-
         </div>
-      </div>
-
-        <ul>
-            <li><a href="#">France 2018</a></li>
-            <li><a href="#">Italy 2018</a></li>
-            <li><a href="#">Turkey 2018</a></li>
-            <li><a href="#">Spain 2018</a></li>
-        </ul>
-    </div>
+      </div> 
     
-    <!---- MAIN VIEW ---->
-    <div id="mainDiv">
-        <div id="weather">  
-            <p id="place">Paris, France</p>
-            
-            <img src="https://image.flaticon.com/icons/svg/12/12163.svg" alt="weather" id="weatherIcon" height="110" width="110">
-            <div  id="temperature"> 
-                   <h4>Weather Data</h4>
-                avgHighTemp: <p id= "highTemp">12</p> °C
-                <br> 
-                avgLowTemp: <p id= "lowTemp">2</p> °C
-            </div>
-            <div id= "vacationData"> 
-                <h4>Vaction Data</h4>
-                arrival: <p id= "arrival">05.02.2018</p> 
-                <br> 
-                departure: <p id= "departure">10.02.2018</p> 
-            </div>
-            
-            <div id="vacationButtons">
-                <button id="editVacation" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span> edit</button>
-                <button id="deleteVacation" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span> delete</button>
-            </div>
-            <div class="glyphicon glyphicon-menu-down" id = "arrowDown"></div>
-        </div>
-        <div id = "hiddenElement">
-            <h4 > additional information </h4>     
-            <div id="additionalWeather">
-                <div>
-                    <img src="../images/cloudcover.jpg" alt="weather" id="cloudCoverImage" height="40" width="40">
-                    <div id="cloudElements">
-                         cloud cover: 
-                        <p id = "cloudCover">45</p>
-                         %
-                    </div>
-                </div>
-
-                <div>
-                    <img src="../images/windSpeed.jpg" alt="weather" id="windSpeedImage" height="40" width="40">
-                    <div id="windSpeedElements">
-                         wind speed: 
-                        <p id = "windSpeed">2</p>
-                         km/h
-                    </div>
-                </div>
-
-                <div>
-                    <img src="../images/raini.jpg" alt="weather" id="precipImage" height="50" width="50">
-                    <div id="precipElements">
-                         precipitation chance: 
-                        <p id = "precipitation">60</p>
-                         %
-                    </div>
-                </div>
-                <p id="precipTypes">The precipitation types in this time of period are rain and drizzle.</p>
-            </div>
-            <div class="glyphicon glyphicon-menu-up" id = "arrowUp"></div>
-            
-        </div>
-
-        <div id="weatherItems">  
-            <h3> weather-dependent items </h3>
-            
-              <table class="table table-bordered" >
-                <thead>
-                  <tr>
-                    <th> </th>
-                    <th>name</th>
-                    <th>planned</th>
-                    <th>packed</th>
-                    <th>ebay</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td> <div class="checkbox"> <label><input type="checkbox" value=""></label></div></td>
-                    <td>shirt</td>
-                    <td>
-                        <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-plus"> </span> </button > 
-                            2 
-                        <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-minus"> </span> </button>
-                    </td>
-                    <td>
-                        <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-plus"> </span> </button>
-                            2 
-                        <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-minus"> </span> </button>
-                    </td>                    
-                    <td> <span class = "glyphicon glyphicon-menu-left"> </span> 
-                        <img src="https://images.evo.com/imgp/zoom/97973/466743/sub_urban-riot-good-vibes-loose-t-shirt-women-s-white-front.jpg" alt="ebay.com" width="80" height="80"> 
-                        <span class = "glyphicon glyphicon-menu-right"> </span>  
-                    </td> 
-                </tr>
-                </tbody>
-              </table>
-        </div>
-        <div id="defaultItems">
-            <h3 id="universalItem"> universal items </h3>
-            <button class="btn btn-default" id="addItem"> add Item </button>
-            
-             <table class="table table-bordered" >
-                <thead>
-                  <tr>
-                    <th> </th>
-                    <th>named</th>
-                    <th>planned</th>
-                    <th>packed</th>
-                    <th>buy</th>
-                    <th> </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="text-center"> <div class="checkbox"> <label><input type="checkbox" value=""></label></div></td>
-                    <td>Pencil</td>
-                    <td class="text-center" >
-                        <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-plus"> </span> </button> 
-                            2 
-                        <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-minus"> </span></button>
-                    </td>
-                    <td> 
-                        <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-plus"> </span> </button> 
-                            2 
-                        <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-minus"> </span> </button>
-                    </td>
-                    <td>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/1200px-EBay_logo.svg.png" alt="ebay.com" width="80" height="30">
-                    </td> 
-                    <td><span class="glyphicon glyphicon-trash"> </span></td>
-                  </tr>
-                </tbody>
-              </table> 
-        </div>
-    </div>
+    
     <script src = "main.js"> </script>
 </body>
 </html>

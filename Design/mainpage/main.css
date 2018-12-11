@@ -17,12 +17,7 @@ a {
     left: 600px;
     
 }
-#addVacation{
-    position:relative;
-    bottom: 20%;
-    right: 4%;
-    float:right;
-}
+
 
 #vacationButtons{
     margin-right: 5%;
@@ -142,13 +137,6 @@ h4{
     display: none;   
 }
 
-#arrowDown, #arrowUp{    
-    margin-left: 44%;
-    margin-top: 4%;
-    margin-bottom: 1%;
-    clear:both;
-    float:left;
-} 
 #place{
     margin-left: 1%;
     margin-top: 1%;
