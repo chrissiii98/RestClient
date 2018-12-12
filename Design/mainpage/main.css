@@ -10,13 +10,7 @@ a {
 .navbar-brand:hover {
     color: darkslategrey;
 }
-.navbar-toggler{
-    width: 20%;
-    padding-right: 20%;
-    position: relative;
-    left: 600px;
-    
-}
+
 
 
 #vacationButtons{
