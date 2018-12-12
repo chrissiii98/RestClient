@@ -1,3 +1,7 @@
+#mainContainer {
+    height: 1000px;
+}
+
 #vacationButtons{
     margin-right: 5%;
     width:10%;
@@ -12,8 +16,16 @@ p {
     font-weight: bold;
 }
 
+.black-border {
+    background-color:rgba(255, 255, 255, 0.8);
+}
+
 #highTemp, #lowTemp, #arrival, #departure, #cloudCover, #windSpeed, #precipitation{
     display: inline;    
+}
+
+#items {
+    border-top: 0.5px solid black;
 }
 
 #vacationData{
