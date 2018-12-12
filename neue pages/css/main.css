@@ -1,14 +1,4 @@
-#vacationButtons{
-    margin-right: 5%;
-    width:10%;
-    float:right;
-}
-
-#deleteVacation{
-    margin-top: 50%;
-}
-
-p {
+p, #vacationHeadline {
     font-weight: bold;
 }
 
@@ -16,66 +6,26 @@ p {
     display: inline;    
 }
 
-#items {
-    border-top: 0.5px solid black;
-}
-
-#vacationData{
-    float:left;
-    margin-left: 20%;
-    font-size: 14pt;   
-}
-
-#temperature{
-    margin-left: 7%;  
-    float:left;
-    font-size:14pt;
-}
-
-#universalItem{
-    float:left; 
-    margin-left: 40%;
-    margin-bottom: 3.1%;
-}
-
-#addItem{
-    float:right;
-    margin-right: 5%;
-}
-
-#cloudCoverImage, #windSpeedImage, #precipImage{
-    float:left;   
-}
-
-#cloudElements, #windSpeedElements, #precipElements {
-    float:left;
-    margin-top: 1%;
-    margin-left: 1.5%;
-}
-
-#precipTypes {
-    clear:both;
-    float:left;
-    margin-top: 2%;
-    margin-left: 1%;
-}
-
-#windSpeedImage, #precipImage{
-    margin-left:7%;
-}
-
-#hiddenElement{
-    display: none;   
-}
-
 #place{
     margin-left: 1%;
     margin-top: 1%;
     font-size: 16pt;
-    float:left;
 }
 
-#weatherIcon{
-    float:left;
-    margin-left: 3%;
+table.table-bordered{
+    border:1.5px solid black;
+  }
+table.table-bordered > thead > tr > th{
+    border:1.5px solid black;
+}
+table.table-bordered > tbody > tr > td{
+    border:1.5px solid black;
+}
+
+#items {
+    border-top: 0.5px solid black;
+}
+
+#hiddenElement{
+    display: none;   
 }
