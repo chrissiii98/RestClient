@@ -1,282 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Vacation Planner - mainpage</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/pages.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-</head>
-<body>
-<!------ NAVBAR--->
-    <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="">VacationPlanner</a>
-        </div>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Profile<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-              <li><a href="profile.html">profile settings</a></li>
-              <li><a href="#">default item list</a></li>
-            </ul>
-          </li>
-          <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
-        </ul>
-    </div> 
-    
-<!---- HEADLINE ------>
-    <div id="mainContainer" class="container-fluid" style="background-image: url(images/Hintergrund1.jpg); background-size: cover;">
-        <div class="row text-center">
-            <h1 id="vacationHeadline">France 2018</h1>
-        </div>
-        
-<!---- SIDENAV --->
-    <div class="col-sm-10 col-sm-push-1 black-border">
-    <div class ="row top-buffer">
-        <div class="col-sm-2">
-        <h3>Vacations</h3>
-            <div class ="row">
-                <div class="col-sm-10">
-                    <ul>
-                        <li><a href="#">France 2018</a></li>
-                        <li><a href="#">Italy 2018</a></li>
-                        <li><a href="#">Turkey 2018</a></li>
-                        <li><a href="#">Spain 2018</a></li>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
+    <head>
+        <title>Vacation Planner - mainpage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/pages.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    </head>
+    <body>
+        <!------ NAVBAR--->
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="">VacationPlanner</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Profile<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="profile.html">profile settings</a></li>
+                        <li><a href="#">default item list</a></li>
                     </ul>
-                </div> 
-                <div class="col-sm-2 col-sm-pull-2" >
-                    <button id="addVacation" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modVacation"><span class="glyphicon glyphicon-plus"></span> add </button>
-                </div>
+                </li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+            </ul>
+        </div> 
+
+        <!---- HEADLINE ------>
+        <div class="mainContainer container-fluid" style="background-image: url(images/Hintergrund1.jpg); background-size: cover;">
+            <div class="row text-center">
+                <h1 id="vacationHeadline">France 2018</h1>
             </div>
-        </div>
-    
-<!---- MAIN VIEW ---->
-    <div class="col-sm-10">     
-       <div class="row">
-           <div class ="col-sm-10 col-sm-push-1">
-               <div class ="row">
-                   <div class ="col-sm-12">
-                        <p id="place">Paris, France</p>
-                    </div>
-                </div>
-                <div class ="row">
-                    <div class ="col-sm-5">
-                        <img src="https://image.flaticon.com/icons/svg/12/12163.svg" alt="weather" id="weatherIcon" height="110" width="110">
-                        <div id="temperature"> 
-                            <h4>Weather Data</h4>
-                            avgHighTemp: <p id= "highTemp">12</p> °C
-                            <br> 
-                            avgLowTemp: <p id= "lowTemp">2</p> °C
+
+            <!---- SIDENAV --->
+            <div class="col-sm-10 col-sm-push-1 white">
+                <div class ="row top-buffer">
+                    <div class="col-sm-2">
+                        <h3>Vacations</h3>
+                        <div class ="row">
+                            <div class="col-sm-10">
+                                <ul>
+                                    <li><a href="#">France 2018</a></li>
+                                    <li><a href="#">Italy 2018</a></li>
+                                    <li><a href="#">Turkey 2018</a></li>
+                                    <li><a href="#">Spain 2018</a></li>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </ul>
+                            </div> 
+                            <div class="col-sm-2 col-sm-pull-2" >
+                                <button id="addVacation" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modVacation"><span class="glyphicon glyphicon-plus"></span> add </button>
+                            </div>
                         </div>
                     </div>
-                    <div class ="col-sm-5">
-                        <div id= "vacationData"> 
-                            <h4>Vaction Data</h4>
-                            arrival: <p id= "arrival">05.02.2018</p> 
-                            <br> 
-                            departure: <p id= "departure">10.02.2018</p> 
+
+                    <!---- MAIN VIEW ---->
+                    <div class="col-sm-10">     
+                        <div class="row">
+                            <div class ="col-sm-10 col-sm-push-1">
+                                <div class ="row">
+                                    <div class ="col-sm-12">
+                                        <p id="place">Paris, France</p>
+                                    </div>
+                                </div>
+                                <div class ="row">
+                                    <div class ="col-sm-5">
+                                        <img src="https://image.flaticon.com/icons/svg/12/12163.svg" alt="weather" id="weatherIcon" height="110" width="110">
+                                        <div id="temperature"> 
+                                            <h4>Weather Data</h4>
+                                            avgHighTemp: <p id= "highTemp">12</p> °C
+                                            <br> 
+                                            avgLowTemp: <p id= "lowTemp">2</p> °C
+                                        </div>
+                                    </div>
+                                    <div class ="col-sm-5">
+                                        <div id= "vacationData"> 
+                                            <h4>Vaction Data</h4>
+                                            arrival: <p id= "arrival">05.02.2018</p> 
+                                            <br> 
+                                            departure: <p id= "departure">10.02.2018</p> 
+                                        </div>
+                                    </div>
+                                    <div class ="col-sm-1">
+                                        <div id="vacationButtons">
+                                            <button id="editVacation" class="btn btn-default"><a href="vacation.html"><span class="glyphicon glyphicon-pencil"></span> edit</a> </button>
+                                            <button id="deleteVacation" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span> delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class ="row"> 
+                                    <div class ="col-sm-12 text-center top-buffer">
+                                        <div class="glyphicon glyphicon-menu-down" id = "arrowDown"></div>
+                                    </div>
+                                </div>  
+
+
+                                <!----- HIDDEN ELEMENT ------>             
+                                <div class="row">
+                                    <div class ="col-sm-10 col-sm-push-1 top-buffer"> 
+                                        <div id = "hiddenElement">
+                                            <h4> additional information </h4>     
+                                            <div>
+                                                <div>
+                                                    <img src="images/cloudcover.jpg" alt="weather" id="cloudCoverImage" height="40" width="40">
+                                                    <div id="cloudElements">
+                                                        cloud cover: 
+                                                        <p id = "cloudCover">45</p>
+                                                        %
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="images/windSpeed.jpg" alt="weather" id="windSpeedImage" height="40" width="40">
+                                                    <div id="windSpeedElements">
+                                                        wind speed: 
+                                                        <p id = "windSpeed">2</p>
+                                                        km/h
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <img src="images/raini.jpg" alt="weather" id="precipImage" height="50" width="50">
+                                                    <div id="precipElements">
+                                                        precipitation chance: 
+                                                        <p id = "precipitation">60</p>
+                                                        %
+                                                    </div>
+                                                </div>
+                                                <p id="precipTypes">The precipitation types in this time of period are rain and drizzle.</p>
+                                            </div>
+                                            <div class ="row"> 
+                                                <div class ="col-sm-12 text-center top-buffer">
+                                                    <div  class="glyphicon glyphicon-menu-up" id = "arrowUp"></div>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MAIN --->
+                        <div class="row" id="items">
+                            <div class ="col-sm-6 top-buffer"> 
+                                <h3 style="text-align: center;"> weather-dependent items </h3>
+                                <table class="table table-bordered top-buffer" >
+                                    <thead>
+                                        <tr>
+                                            <th> </th>
+                                            <th>name</th>
+                                            <th>planned</th>
+                                            <th>packed</th>
+                                            <th>ebay</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center"> <div class="checkbox"> <label><input type="checkbox" value=""></label></div></td>
+                                            <td class="text-center">Shirt</td>
+                                            <td class="text-center"> <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-plus"> </span> </button > 
+                                                2 
+                                                <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-minus"> </span> </button>
+                                            </td>
+                                            <td class="text-center">
+                                                <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-plus"> </span> </button>
+                                                2 
+                                                <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-minus"> </span> </button>
+                                            </td>                    
+                                            <td class="text-center"> <span class = "glyphicon glyphicon-menu-left"> </span> 
+                                                <img src="https://images.evo.com/imgp/zoom/97973/466743/sub_urban-riot-good-vibes-loose-t-shirt-women-s-white-front.jpg" alt="ebay.com" width="80" height="80"> 
+                                                <span class = "glyphicon glyphicon-menu-right"> </span>  
+                                            </td> 
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class ="col-sm-6 top-buffer"> 
+                                <div class="col-sm-8">
+                                    <h3 id="universalItem"> universal items </h3>
+                                </div>
+                                <div class="col-sm-4">
+                                    <button class="btn btn-default top-buffer" id="addItem"> add Item </button>
+                                </div>
+                                <table class="table table-bordered top-buffer" >
+                                    <thead>
+                                        <tr>
+                                            <th> </th>
+                                            <th>named</th>
+                                            <th>planned</th>
+                                            <th>packed</th>
+                                            <th>buy</th>
+                                            <th> </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center"> <div class="checkbox"> <label><input type="checkbox" value=""></label></div></td>
+                                            <td class="text-center">Pencil</td>
+                                            <td class="text-center" >
+                                                <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-plus"> </span> </button> 
+                                                2 
+                                                <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-minus"> </span></button>
+                                            </td>
+                                            <td class="text-center"> 
+                                                <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-plus"> </span> </button> 
+                                                2 
+                                                <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-minus"> </span> </button>
+                                            </td>
+                                            <td class="text-center">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/1200px-EBay_logo.svg.png" alt="ebay.com" width="80" height="30">
+                                            </td> 
+                                            <td class="text-center"><span class="glyphicon glyphicon-trash"> </span></td>
+                                        </tr>
+                                    </tbody>
+                                </table> 
+                            </div>
                         </div>
                     </div>
-                    <div class ="col-sm-1">
-                    <div id="vacationButtons">
-                        <button id="editVacation" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span> edit</button>
-                        <button id="deleteVacation" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span> delete</button>
-                    </div>
-                    </div>
-               </div>
-                <div class ="row"> 
-                    <div class ="col-sm-12 text-center top-buffer">
-                        <div class="glyphicon glyphicon-menu-down" id = "arrowDown"></div>
-                    </div>
-                </div>  
-               
-           
-<!----- HIDDEN ELEMENT ------>             
-        <div class="row">
-           <div class ="col-sm-10 col-sm-push-1 top-buffer"> 
-                <div id = "hiddenElement">
-                    <h4> additional information </h4>     
-                        <div>
-                            <div>
-                                <img src="images/cloudcover.jpg" alt="weather" id="cloudCoverImage" height="40" width="40">
-                                <div id="cloudElements">
-                                    cloud cover: 
-                                    <p id = "cloudCover">45</p>
-                                    %
-                                </div>
-                            </div>
-                            <div>
-                                <img src="images/windSpeed.jpg" alt="weather" id="windSpeedImage" height="40" width="40">
-                                <div id="windSpeedElements">
-                                    wind speed: 
-                                    <p id = "windSpeed">2</p>
-                                    km/h
-                                </div>
-                            </div>
-                            <div>
-                                <img src="images/raini.jpg" alt="weather" id="precipImage" height="50" width="50">
-                                <div id="precipElements">
-                                    precipitation chance: 
-                                    <p id = "precipitation">60</p>
-                                    %
-                                </div>
-                            </div>
-                        <p id="precipTypes">The precipitation types in this time of period are rain and drizzle.</p>
-                    </div>
-                    <div class ="row"> 
-                    <div class ="col-sm-12 text-center top-buffer">
-                        <div  class="glyphicon glyphicon-menu-up" id = "arrowUp"></div>
-                    </div>
-                </div>   
                 </div>
             </div>
-           </div>
-           </div>
-        </div>
-        
-<!-- MAIN --->
-        <div class="row" id="items">
-           <div class ="col-sm-6 top-buffer"> 
-               <h3 style="text-align: center;"> weather-dependent items </h3>
-               <table class="table table-bordered top-buffer" >
-                   <thead>
-                        <tr>
-                            <th> </th>
-                            <th>name</th>
-                            <th>planned</th>
-                            <th>packed</th>
-                            <th>ebay</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="text-center"> <div class="checkbox"> <label><input type="checkbox" value=""></label></div></td>
-                            <td class="text-center">Shirt</td>
-                            <td class="text-center"> <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-plus"> </span> </button > 
-                                    2 
-                                <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-minus"> </span> </button>
-                            </td>
-                            <td class="text-center">
-                                <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-plus"> </span> </button>
-                                    2 
-                                <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-minus"> </span> </button>
-                            </td>                    
-                            <td class="text-center"> <span class = "glyphicon glyphicon-menu-left"> </span> 
-                                <img src="https://images.evo.com/imgp/zoom/97973/466743/sub_urban-riot-good-vibes-loose-t-shirt-women-s-white-front.jpg" alt="ebay.com" width="80" height="80"> 
-                                <span class = "glyphicon glyphicon-menu-right"> </span>  
-                            </td> 
-                        </tr>
-                   </tbody>
-               </table>
-            </div>
-            <div class ="col-sm-6 top-buffer"> 
-                <div class="col-sm-8">
-                    <h3 id="universalItem"> universal items </h3>
+
+            <!-- MODAL ELEMENT -->
+            <div class="modal fade" id="modVacation" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <!-- MODAL CONTENT-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">New Vacation</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form data-toggle="validator">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="vacname">Vacation name:</label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control" type="text" id="username" name="username" placeholder="Enter vacation name" maxLength="20" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="vacname">Country: </label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control" type="text" id="country" name="country" placeholder="Enter country" maxLength="20" pattern="^[_A-z0-9]{1,}$" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="vacname">City: </label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control" type="text" id="city" name="city" placeholder="Enter city" maxLength="20" pattern="^[_A-z0-9]{1,}$" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="daterange">Period of time: </label>
+                                    <div class="col-sm-10">
+                                        <input class="form-control" type="text" id="daterange" name="daterange" placeholder="Enter the period of time of the vacation"required>
+                                    </div>
+                                </div>
+                                <div class="form-group text-center">
+                                    <button type="submit" class="btn btn-default top-buffer" id ="submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-4">
-                    <button class="btn btn-default top-buffer" id="addItem"> add Item </button>
-                </div>
-                    <table class="table table-bordered top-buffer" >
-                        <thead>
-                          <tr>
-                            <th> </th>
-                            <th>named</th>
-                            <th>planned</th>
-                            <th>packed</th>
-                            <th>buy</th>
-                            <th> </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="text-center"> <div class="checkbox"> <label><input type="checkbox" value=""></label></div></td>
-                            <td class="text-center">Pencil</td>
-                            <td class="text-center" >
-                                <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-plus"> </span> </button> 
-                                    2 
-                                <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-minus"> </span></button>
-                            </td>
-                            <td class="text-center"> 
-                                <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-plus"> </span> </button> 
-                                    2 
-                                <button class = "btn btn-default btn-xs"> <span class="glyphicon glyphicon-minus"> </span> </button>
-                            </td>
-                            <td class="text-center">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/EBay_logo.svg/1200px-EBay_logo.svg.png" alt="ebay.com" width="80" height="30">
-                            </td> 
-                            <td class="text-center"><span class="glyphicon glyphicon-trash"> </span></td>
-                          </tr>
-                        </tbody>
-                </table> 
             </div>
-        </div>
-        </div>
-        </div>
-    </div>
-    
-<!-- MODAL ELEMENT -->
-    <div class="modal fade" id="modVacation" role="dialog">
-        <div class="modal-dialog modal-lg">
-<!-- MODAL CONTENT-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">New Vacation</h4>
-            </div>
-              <div class="modal-body">
-                <form data-toggle="validator">
-                    <div class="form-group">
-                      <label class="control-label col-sm-2" for="vacname">Vacation name:</label>
-                      <div class="col-sm-10">
-                        <input class="form-control" type="text" id="username" name="username" placeholder="Enter vacation name" maxLength="20" required>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="control-label col-sm-2" for="vacname">Country: </label>
-                      <div class="col-sm-10">
-                        <input class="form-control" type="text" id="country" name="country" placeholder="Enter country" maxLength="20" pattern="^[_A-z0-9]{1,}$" required>
-                      </div>
-                    </div>
-                     <div class="form-group">
-                      <label class="control-label col-sm-2" for="vacname">City: </label>
-                      <div class="col-sm-10">
-                        <input class="form-control" type="text" id="city" name="city" placeholder="Enter city" maxLength="20" pattern="^[_A-z0-9]{1,}$" required>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="control-label col-sm-2" for="daterange">Period of time: </label>
-                      <div class="col-sm-10">
-                        <input class="form-control" type="text" id="daterange" name="daterange" placeholder="Enter the period of time of the vacation"required>
-                      </div>
-                    </div>
-                    <div class="form-group text-center">
-                        <button type="submit" class="btn btn-default top-buffer" id ="submit">Submit</button>
-                    </div>
-                </form>
-            </div>
-          </div>
-        </div>
-        </div>
-    </div> 
-    <script src="js/main.js"></script>
-</body>
+        </div> 
+        <script src="js/main.js"></script>
+    </body>
 </html>

@@ -14,19 +14,19 @@ header.masthead{
 }
 
 .line {
-	font-size: 50px;
+    font-size: 50px;
 }
 
 #intro-text{
-	text-align: center;
+    text-align: center;
     font-size: 13pt;
-	position: relative;
-	top: 230px;	
+    position: relative;
+    top: 230px;	
 }
 
 #demo{                  /*kann dann weg*/
     text-align: center;
-	height: 700px;	
+    height: 700px;	
     margin-top: 4%;
 }
 

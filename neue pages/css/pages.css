@@ -2,12 +2,13 @@ a {
     color: black;
 } 
 
-.navbar-brand:visited {
+a:visited {
     color: black;
 }
 
-.navbar-brand:hover {
+a:hover {
     color: darkslategrey;
+    text-decoration: none;
 }
 
 .form-group, .form-control, label {
@@ -20,4 +21,12 @@ a {
 
 option {
     color: black;
+}
+
+.white {
+    background-color:rgba(255, 255, 255, 0.8);
+}
+
+.mainContainer {
+    height: 1000px;
 }
